@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  database:
+    container_name: postgres-nest-toothfixers
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    volumes:
+      - /Users/mirireoluwaolukanni/Documents/PAU/COS202/codes/CSC202-2022set/nest-toothfixers/data:/nest/data
+    env_file:
+      - nest-toothfixers.env
